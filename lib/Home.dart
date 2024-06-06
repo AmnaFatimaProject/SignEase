@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/Translate.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:untitled/CameraApp%20.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -43,7 +42,7 @@ class Home extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Translate()),
+                  MaterialPageRoute(builder: (context) => CameraApp ()),
                 );
               },
               icon: Icon(Icons.play_arrow),
