@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/cameratranslate.dart';
 
 class CameraApp extends StatelessWidget {
   const CameraApp({Key? key}) : super(key: key);
@@ -34,13 +35,16 @@ class CameraApp extends StatelessWidget {
                   children: [
                     Image.asset(
                       'assets/images/logo-black.png',
-                      height: 200,
-                      width: 200,
+                      height: 220,
+                      width: 220,
                     ),
                     SizedBox(height: 30),
                     ElevatedButton(
                       onPressed: () {
-                        // Navigate to screen for sign to text translation
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Cameratranslate()),
+                        );
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(15.0),
